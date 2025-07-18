@@ -2,5 +2,5 @@ streamlit
 streamlit_authenticator
 matplotlib
 pandas
-json
+pyyaml
 sqlite3
