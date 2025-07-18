@@ -460,7 +460,7 @@ elif auth_status:
 
 else:
     # Optional: Allow registration if not authenticated
-    with st.expander("\ud83d\udcc5 New user? Register here"):
+    with st.expander("📥 New user? Register here"):
         try:
             email, username, registered_name = authenticator.register_user(
                 location='main',
