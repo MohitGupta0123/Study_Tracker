@@ -1,6 +1,7 @@
 # 📚 GATE Study Tracker Dashboard
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-ff4b4b?logo=streamlit)](https://your-deployment-link.streamlit.app)
+[![Render App](https://img.shields.io/badge/Render-Live%20App-3f7cff?logo=render&logoColor=white)](https://study-tracker-2zhd.onrender.com/)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-ff4b4b?logo=streamlit)](https://study-tracker-2zhd.onrender.com/)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-purple.svg)](https://github.com/your-repo-url/issues)
