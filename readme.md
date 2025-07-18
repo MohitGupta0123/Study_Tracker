@@ -14,7 +14,7 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 
 ## 🚀 Live Demo
 
-👉 **[Click here to try the app!](https://your-deployment-link.streamlit.app)**
+👉 **[Click here to try the app!](https://study-tracker-2zhd.onrender.com/)**
 
 ---
 
@@ -40,6 +40,8 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 
 ## 🗂️ Directory Structure
 
+```
+
 📁 gate-study-tracker/
 
 ├── gate\_study\_tracker\_final.py          # Streamlit main app
@@ -59,6 +61,8 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 ├── requirements.txt                     # Python dependencies
 
 └── README.md                            # You're reading it 🙂
+
+```
 
 ---
 
