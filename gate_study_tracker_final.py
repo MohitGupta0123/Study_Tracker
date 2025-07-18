@@ -83,7 +83,14 @@ from streamlit_authenticator.utilities.hasher import Hasher
 #     st.warning("🔐 Please enter your username and password")
 # elif auth_status:
 #     authenticator.logout("Logout", location="main")
+    
+#     # ✅ Clear checkbox state from previous session
+#     for key in list(st.session_state.keys()):
+#         if key.startswith("checkboxes_"):
+#             del st.session_state[key]
+
 #     st.success(f"👋 Welcome, {name}!")
+
 
 
 import streamlit as st
@@ -148,7 +155,14 @@ elif auth_status is None:
     st.warning("🔐 Please enter your username and password")
 elif auth_status:
     authenticator.logout("Logout", location="main")
+    
+    # ✅ Clear checkbox state from previous session
+    for key in list(st.session_state.keys()):
+        if key.startswith("checkboxes_"):
+            del st.session_state[key]
+
     st.success(f"👋 Welcome, {name}!")
+
 
     # ---------- Your Dashboard Code Below ----------
     PROGRESS_FILE = f"{username}_progress.json"
@@ -183,10 +197,11 @@ elif auth_status:
     stored_progress = load_progress()
 
     # Initialize session state
-    if 'checkboxes' not in st.session_state:
-        st.session_state.checkboxes = [[stored_progress.get(f"{i}-{j}", False)
-                                        for j in range(len(session_cols))]
-                                        for i in range(len(schedule_df))]
+    if f'checkboxes_{username}' not in st.session_state:
+        st.session_state[f'checkboxes_{username}'] = [[stored_progress.get(f"{i}-{j}", False)
+                                                   for j in range(len(session_cols))]
+                                                   for i in range(len(schedule_df))]
+
 
     # ---- Layout ----
     # st.title("📘 GATE Study Tracker")
@@ -228,7 +243,7 @@ elif auth_status:
         # # Find first uncompleted day based on checkboxes
         # today_index = None
         # for i in range(len(schedule_df)):
-        #     if not all(st.session_state.checkboxes[i]):
+        #     if not all(st.session_state[f'checkboxes_{username}'][i]):
         #         today_index = i
         #         break
 
@@ -240,7 +255,7 @@ elif auth_status:
 
         #     for j, session in enumerate(session_cols):
         #         subject = today_row[session]
-        #         is_checked = st.session_state.checkboxes[today_index][j]
+        #         is_checked = st.session_state[f'checkboxes_{username}'][today_index][j]
         #         if subject in subjects_list and not is_checked:
         #             unchecked_subjects.append((session, subject))
 
@@ -269,7 +284,7 @@ elif auth_status:
         for i in range(min(current_day_index, len(schedule_df))):
             for j, session in enumerate(session_cols):
                 subject = schedule_df.loc[i, session]
-                if subject in subjects_list and not st.session_state.checkboxes[i][j]:
+                if subject in subjects_list and not st.session_state[f'checkboxes_{username}'][i][j]:
                     backlogs.append((schedule_df.loc[i, 'Day'], session, subject))
 
         if backlogs:
@@ -286,7 +301,7 @@ elif auth_status:
 
             for j, session in enumerate(session_cols):
                 subject = today_row[session]
-                if subject in subjects_list and not st.session_state.checkboxes[current_day_index][j]:
+                if subject in subjects_list and not st.session_state[f'checkboxes_{username}'][current_day_index][j]:
                     unchecked_today.append((session, subject))
 
             st.markdown(f"**📆 Today: {today_row['Day']}**")
@@ -311,21 +326,21 @@ elif auth_status:
         for i, row in schedule_df.iterrows():
             cols = st.columns([0.9] + [1]*len(session_cols))
             day_label = row['Day']
-            all_checked = all(st.session_state.checkboxes[i])
+            all_checked = all(st.session_state[f'checkboxes_{username}'][i])
             new_master = cols[0].checkbox(f"{day_label}", value=all_checked, key=f"master-{i}")
 
             if new_master != all_checked:
                 for j in range(len(session_cols)):
-                    st.session_state.checkboxes[i][j] = new_master
+                    st.session_state[f'checkboxes_{username}'][i][j] = new_master
                 st.toast(f"{day_label} {'selected' if new_master else 'cleared'} ✅", icon="🎯")
 
 
             for j, session in enumerate(session_cols):
                 key = f"{i}-{j}"
                 subject = row[session]
-                current_value = st.session_state.checkboxes[i][j]
+                current_value = st.session_state[f'checkboxes_{username}'][i][j]
                 new_value = cols[j+1].checkbox(subject, value=current_value, key=key)
-                st.session_state.checkboxes[i][j] = new_value
+                st.session_state[f'checkboxes_{username}'][i][j] = new_value
                 if new_value and subject in subjects_list:
                     subject_hours[subject] = subject_hours.get(subject, 0) + SESSION_HOURS
 
@@ -333,8 +348,9 @@ elif auth_status:
     progress_dict = {}
     for i in range(len(schedule_df)):
         for j in range(len(session_cols)):
-            progress_dict[f"{i}-{j}"] = st.session_state.checkboxes[i][j]
+            progress_dict[f"{i}-{j}"] = st.session_state[f'checkboxes_{username}'][i][j]
     save_progress(progress_dict)
+
 
     # ---- RIGHT: Analytics ----
     with right_col:
@@ -388,7 +404,7 @@ elif auth_status:
         st.subheader("✅ Daily Completion Table")
         daily_data = []
         for i, row in schedule_df.iterrows():
-            completed = [st.session_state.checkboxes[i][j] for j in range(len(session_cols))]
+            completed = [st.session_state[f'checkboxes_{username}'][i][j] for j in range(len(session_cols))]
             daily_data.append({
                 "Day": row['Day'],
                 **{session_cols[j]: ("✔️" if completed[j] else "") for j in range(len(session_cols))}
@@ -400,7 +416,7 @@ elif auth_status:
         time_freq = {slot: 0 for slot in session_cols}
         for i in range(len(schedule_df)):
             for j, slot in enumerate(session_cols):
-                if st.session_state.checkboxes[i][j]:
+                if st.session_state[f'checkboxes_{username}'][i][j]:
                     time_freq[slot] += 1
         time_freq_df = pd.DataFrame({
             "Time Slot": list(time_freq.keys()),
@@ -438,7 +454,7 @@ elif auth_status:
     if st.button("🔁 Reset All Progress"):
         for i in range(len(schedule_df)):
             for j in range(len(session_cols)):
-                st.session_state.checkboxes[i][j] = False
+                st.session_state[f'checkboxes_{username}'][i][j] = False
         save_progress({})
         st.rerun()
 
@@ -454,3 +470,4 @@ else:
                 st.success(f"✅ Registered successfully for: {registered_name} ({email})")
         except Exception as e:
             st.error(e)
+
