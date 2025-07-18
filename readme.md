@@ -1,4 +1,3 @@
-```markdown
 # 📚 GATE Study Tracker Dashboard
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-ff4b4b?logo=streamlit)](https://your-deployment-link.streamlit.app)
@@ -40,8 +39,6 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 ---
 
 ## 🗂️ Directory Structure
-
-```
 
 📁 gate-study-tracker/
 ├── gate\_study\_tracker\_final.py          # Streamlit main app
@@ -165,7 +162,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 👤 Author
 
 * **Mohit Gupta**
-  🎓 B.Tech in Artificial Intelligence & Data Science
   🔗 [LinkedIn](https://www.linkedin.com/in/mohit-gupta-ai)
   📧 [Email](mailto:mgmohit1111@gmail.com)
 
