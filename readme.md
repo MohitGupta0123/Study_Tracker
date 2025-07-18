@@ -4,11 +4,11 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-purple.svg)](https://github.com/your-repo-url/issues)
-
-
 [![Last Commit](https://img.shields.io/github/last-commit/MohitGupta0123/Study_Tracker?color=purple)](https://github.com/MohitGupta0123/Study_Tracker/commits/main/)
-<!-- [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MohitGupta0123.Study_Tracker)](https://github.com/MohitGupta0123/Study_Tracker) -->
 [![Issues](https://img.shields.io/github/issues/MohitGupta0123/Study_Tracker)](https://github.com/MohitGupta0123/Study_Tracker/issues)
+
+
+<!-- [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MohitGupta0123.Study_Tracker)](https://github.com/MohitGupta0123/Study_Tracker) -->
 <!-- [![Forks](https://img.shields.io/github/forks/MohitGupta0123/Study_Tracker?style=social)](https://github.com/MohitGupta0123/Study_Tracker/fork)
 [![Stars](https://img.shields.io/github/stars/MohitGupta0123/Study_Tracker?style=social)](https://github.com/MohitGupta0123/Study_Tracker/stargazers) -->
 
