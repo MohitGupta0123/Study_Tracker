@@ -44,23 +44,23 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 
 📁 gate-study-tracker/
 
-├── gate\_study\_tracker\_final.py          # Streamlit main app
+    ├── gate\_study\_tracker\_final.py          # Streamlit main app
 
-├── auth\_db.py                           # SQLite-based authentication
+    ├── auth\_db.py                           # SQLite-based authentication
 
-├── users.db                             # Registered users stored here
+    ├── users.db                             # Registered users stored here
 
-├── \*.json                               # User progress files (per user)
+    ├── \*.json                               # User progress files (per user)
 
-├── credentials.yaml                     # (Optional) legacy credentials
+    ├── credentials.yaml                     # (Optional) legacy credentials
 
-├── Study\_Plan\_Schedule.csv              # Timetable (days × session slots)
+    ├── Study\_Plan\_Schedule.csv              # Timetable (days × session slots)
 
-├── Subject\_Study\_Time\_Table.csv         # Subjects with video hours
+    ├── Subject\_Study\_Time\_Table.csv         # Subjects with video hours
 
-├── requirements.txt                     # Python dependencies
+    ├── requirements.txt                     # Python dependencies
 
-└── README.md                            # You're reading it 🙂
+    └── README.md                            # You're reading it 🙂
 
 ```
 
