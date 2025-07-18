@@ -51,8 +51,6 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 ├── requirements.txt                     # Python dependencies
 └── README.md                            # You're reading it 🙂
 
-````
-
 ---
 
 ## 🛠️ Installation
