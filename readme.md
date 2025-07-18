@@ -22,7 +22,7 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 
 ## 🚀 Live Demo
 
-👉 **[Click here to try the app!](https://study-tracker-2zhd.onrender.com/)**
+👉 **[LIVE APP!](https://study-tracker-2zhd.onrender.com/)**
 
 ### 📌 Main Dashboard View
 
