@@ -146,8 +146,9 @@ if st.session_state.get('authentication_status') is None:
 
 # ---- Authenticated Section ----
 auth_status = st.session_state.get('authentication_status')
-username = st.session_state.get('username')
-name = st.session_state.get('name')
+if auth_status:
+    username = st.session_state.get('username')
+    name = st.session_state.get('name')
 
 if auth_status is False:
     st.error("❌ Incorrect username or password")
