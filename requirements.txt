@@ -1,0 +1,6 @@
+streamlit
+streamlit_authenticator
+matplotlib
+pandas
+json
+sqlite3
