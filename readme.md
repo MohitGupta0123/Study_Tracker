@@ -41,14 +41,23 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 ## 🗂️ Directory Structure
 
 📁 gate-study-tracker/
+
 ├── gate\_study\_tracker\_final.py          # Streamlit main app
+
 ├── auth\_db.py                           # SQLite-based authentication
+
 ├── users.db                             # Registered users stored here
+
 ├── \*.json                               # User progress files (per user)
+
 ├── credentials.yaml                     # (Optional) legacy credentials
+
 ├── Study\_Plan\_Schedule.csv              # Timetable (days × session slots)
+
 ├── Subject\_Study\_Time\_Table.csv         # Subjects with video hours
+
 ├── requirements.txt                     # Python dependencies
+
 └── README.md                            # You're reading it 🙂
 
 ---
@@ -58,8 +67,8 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 ### 1️⃣ Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/gate-study-tracker.git
-cd gate-study-tracker
+git clone https://github.com/MohitGupta0123/Study_Tracker.git
+cd Study_Tracker
 ````
 
 ### 2️⃣ Install Requirements
@@ -71,7 +80,7 @@ pip install -r requirements.txt
 ### 3️⃣ Run the App
 
 ```bash
-streamlit run gate_study_tracker_final.py
+streamlit run gate_study_tracker_final.py --server.port 8501
 ```
 
 ---
@@ -143,16 +152,10 @@ streamlit run gate_study_tracker_final.py
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙌 Acknowledgements
 
-* Thanks to [`streamlit_authenticator`](https://github.com/mkhorasani/streamlit_authenticator) for easy auth integration
-* Inspired by real GATE preparation needs of students
+* Thanks to `streamlit_authenticator` for easy auth integration
+* Inspired by real preparation needs of students
 * Created with 💙 using Python and Streamlit
 
 ---
@@ -160,7 +163,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 👤 Author
 
 * **Mohit Gupta**
+
   🔗 [LinkedIn](https://www.linkedin.com/in/mohit-gupta-ai)
+
   📧 [Email](mailto:mgmohit1111@gmail.com)
 
 ---
