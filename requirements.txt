@@ -3,4 +3,3 @@ streamlit_authenticator
 matplotlib
 pandas
 pyyaml
-sqlite3
