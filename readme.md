@@ -14,9 +14,6 @@
 [![Stars](https://img.shields.io/github/stars/MohitGupta0123/Study_Tracker?style=social)](https://github.com/MohitGupta0123/Study_Tracker/stargazers) -->
 
 
-
-
-
 ---
 
 A beautiful and personalized 📈 **Study Progress Dashboard** built using **Streamlit** with secure authentication. Designed for students preparing for GATE or any exam — to track daily goals, visualize subject-wise progress, and maintain consistency using real data, session-wise scheduling, and performance metrics.
@@ -27,11 +24,29 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 
 👉 **[Click here to try the app!](https://study-tracker-2zhd.onrender.com/)**
 
+### 📌 Main Dashboard View
+
+![Main Dashboard](Pics/Main.png)
+
 ---
 
-## 🖼️ Screenshot
+## 🖼️ Screenshots
 
-> _Insert a screenshot here when hosted or from GitHub image upload_
+### 🔍 Additional Views
+
+| Feature                | Screenshot |
+|------------------------|------------|
+| 🔐 **Login Page 1**    | ![Login1](Pics/Login1.png) |
+| 🔐 **Login Page 2**    | ![Login2](Pics/Login2.png) |
+| 🗓️ **Main Dashboard**     | ![Main Dashboard](Pics/Main1.png) |
+| 🗓️ **Today’s Plan**     | ![Today Plan](Pics/today%20plan.png) |
+| ✅ **Daily Completion** | ![Daily Completion](Pics/Daily%20completion.png) |
+| 📊 **Time Usage**       | ![Time Usage](Pics/time%20usage.png) |
+| 📈 **Comparison Chart** | ![Comparison](Pics/Comparision%20chart.png) |
+| 📉 **Analysis Table**   | ![Analysis Table](Pics/Analysis%20table.png) |
+| 📋 **Tracker Grid**     | ![Tracker](Pics/Tracker.png) |
+| 📦 **Overall Summary**  | ![Overall Summary](Pics/Overall%20summary.png) |
+| 🧭 **Time Distribution**| ![Time Distribution](Pics/Time%20distribution.png) |
 
 ---
 
