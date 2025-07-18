@@ -16,7 +16,7 @@
 
 ---
 
-A beautiful and personalized 📈 **Study Progress Dashboard** built using **Streamlit** with secure authentication. Designed for students preparing for GATE or any exam — to track daily goals, visualize subject-wise progress, and maintain consistency using real data, session-wise scheduling, and performance metrics.
+A beautiful and personalized 📈 **Study Progress Dashboard** built using **Streamlit** with secure authentication. Designed for students preparing for any exam — to track daily goals, visualize subject-wise progress, and maintain consistency using real data, session-wise scheduling, and performance metrics.
 
 ---
 
@@ -68,9 +68,9 @@ A beautiful and personalized 📈 **Study Progress Dashboard** built using **Str
 
 ```
 
-📁 gate-study-tracker/
+📁 study-tracker/
 
-    ├── gate\_study\_tracker\_final.py          # Streamlit main app
+    ├── study\_tracker\_final.py             # Streamlit main app
 
     ├── auth\_db.py                           # SQLite-based authentication
 
@@ -110,7 +110,7 @@ pip install -r requirements.txt
 ### 3️⃣ Run the App
 
 ```bash
-streamlit run gate_study_tracker_final.py --server.port 8501
+streamlit run study_tracker_final.py --server.port 8501
 ```
 
 ---
