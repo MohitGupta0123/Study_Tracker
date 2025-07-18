@@ -7,10 +7,10 @@
 
 
 [![Last Commit](https://img.shields.io/github/last-commit/MohitGupta0123/Study_Tracker?color=purple)](https://github.com/MohitGupta0123/Study_Tracker/commits/main/)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MohitGupta0123.Study_Tracker)](https://github.com/MohitGupta0123/Study_Tracker)
+<!-- [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MohitGupta0123.Study_Tracker)](https://github.com/MohitGupta0123/Study_Tracker) -->
 [![Issues](https://img.shields.io/github/issues/MohitGupta0123/Study_Tracker)](https://github.com/MohitGupta0123/Study_Tracker/issues)
-[![Forks](https://img.shields.io/github/forks/MohitGupta0123/Study_Tracker?style=social)](https://github.com/MohitGupta0123/Study_Tracker/fork)
-[![Stars](https://img.shields.io/github/stars/MohitGupta0123/Study_Tracker?style=social)](https://github.com/MohitGupta0123/Study_Tracker/stargazers)
+<!-- [![Forks](https://img.shields.io/github/forks/MohitGupta0123/Study_Tracker?style=social)](https://github.com/MohitGupta0123/Study_Tracker/fork)
+[![Stars](https://img.shields.io/github/stars/MohitGupta0123/Study_Tracker?style=social)](https://github.com/MohitGupta0123/Study_Tracker/stargazers) -->
 
 
 
