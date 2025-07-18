@@ -2,9 +2,19 @@
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-ff4b4b?logo=streamlit)](https://your-deployment-link.streamlit.app)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-purple.svg)](https://github.com/your-repo-url/issues)
+
+
+[![Last Commit](https://img.shields.io/github/last-commit/your-username/your-repo?color=purple)](https://github.com/your-username/your-repo/commits/main)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=your-username.your-repo)](https://github.com/your-username/your-repo)
+[![Issues](https://img.shields.io/github/issues/your-username/your-repo)](https://github.com/your-username/your-repo/issues)
+[![Forks](https://img.shields.io/github/forks/your-username/your-repo?style=social)](https://github.com/your-username/your-repo/fork)
+[![Stars](https://img.shields.io/github/stars/your-username/your-repo?style=social)](https://github.com/your-username/your-repo/stargazers)
+
+
+
+
 
 ---
 
@@ -168,7 +178,7 @@ streamlit run gate_study_tracker_final.py --server.port 8501
 
 * **Mohit Gupta**
 
-  🔗 [LinkedIn](https://www.linkedin.com/in/mohit-gupta-ai)
+  🔗 [LinkedIn](https://www.linkedin.com/in/mohitgupta012/)
 
   📧 [Email](mailto:mgmohit1111@gmail.com)
 
